@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    .container {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .box {
+      height: 756px;
+      background-color: black;
+      display: grid;
+      gap: 9px;
+      grid-template-columns: 320px 198px 153px 50px ;
+      grid-template-rows: 414px 130px 1px 155px 20px;
+
+    } 
+
+    .red {
+      background-color: red;
+    }
+
+    .gray {
+      background-color: #F0F1EC;
+    }
+    .gray1 {
+      grid-column: span 3;
+    }
+
+    .gray2 {
+      grid-row: span 3;
+    }
+
+    .gray3 {
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+
+    .gray4 {
+      grid-row: span 2;
+      order: 3;
+    }
+
+    .gap {
+      background-color: black;
+      order: 2;
+    }
+    .blue {
+      background-color: #004592;
+      order: 1
+    }
+
+    .gray5 {
+      order: 4;
+    }
+
+    .yellow {
+      background-color: #F9D01E;
+      order: 5;
+    }
+
+    .darkgray {
+      background-color: #232629;
+      order: 6;
+    }
+
+    span {
+        color: #FF914D;
+    }
+
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+  </style>
+</head>
+
+<body>
+  <nav class="navbar bg-black border-bottom border-body py-3 navbar-expand-lg sticky-top px-5" data-bs-theme="dark">
+    <div class="container-fluid px-2">
+        <a class="navbar-brand nav-link" href="../../index.html">Capstone <span>Project</span> 2</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
+                <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../CAPSTONE PROJECT 1/index.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="../index.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="../../CAPSTONE PROJECT 1/Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <!-- Write your HTML here -->
+  <div class="container">
+    <div class="box">
+      <div class="item red"></div>
+      <div class="item gray gray1"></div>
+      <div class="item gray gray2"></div>
+      <div class="item gray gray3"></div>
+      <div class="item gap"></div>
+      <div class="item blue"></div>
+      <div class="item gray gray4"></div>
+      <div class="item gray gray5"></div>
+      <div class="item yellow"></div>
+      <div class="item darkgray"></div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
